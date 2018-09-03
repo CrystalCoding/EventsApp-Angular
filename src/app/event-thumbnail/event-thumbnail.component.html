@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-11">
+    <h2>{{eventThumbnail?.name}} </h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div><strong>Date:</strong> {{eventThumbnail?.date}}</div>
+    <div><strong>Time:</strong> {{eventThumbnail?.time}}</div>
+    <div><strong>Price:</strong> ${{eventThumbnail?.price}}</div>
+  </div>
+  <div class="col-md-6">
+    <address>
+      <strong>Address:</strong><br />
+      {{eventThumbnail?.location?.address}}<br />
+      {{eventThumbnail?.location?.city}}, {{eventThumbnail?.location?.country}}
+    </address>
+  </div>
+</div>
